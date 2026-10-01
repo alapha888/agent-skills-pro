@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Skills Pro — 3 advanced skills for AI coding agents</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.65; color: #1a1a1a; max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+  h1 { font-size: 1.9em; margin-bottom: 0.2em; }
+  h2 { margin-top: 2em; font-size: 1.25em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+  .tagline { color: #555; font-size: 1.05em; }
+  .price { font-size: 1.6em; font-weight: 700; margin: 0.5em 0; }
+  .skill { background: #f7f7f8; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .skill code { font-weight: 700; }
+  .steps { counter-reset: step; padding-left: 0; list-style: none; }
+  .steps li { counter-increment: step; margin: 10px 0; padding-left: 2.2em; position: relative; }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 1.6em; height: 1.6em; background: #1a1a1a; color: #fff; border-radius: 50%; text-align: center; line-height: 1.6em; font-size: 0.85em; }
+  .btn { display: inline-block; background: #1a1a1a; color: #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 10px; }
+  .fine { color: #666; font-size: 0.9em; }
+  footer { margin-top: 3em; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 1em; }
+</style>
+</head>
+<body>
+
+<h1>Agent Skills Pro</h1>
+<p class="tagline">Three advanced agent skills for the work that comes <em>after</em> the basics: coordinating parallel agents, onboarding onto unfamiliar repos, and cutting releases people can read.</p>
+<p class="fine">A paid companion to the <a href="https://github.com/alapha888/agent-skills-en">free Agent Skills pack</a> (MIT, 5 skills). The free pack stays free — Pro covers the advanced workflows.</p>
+
+<h2>What's inside</h2>
+
+<div class="skill">
+  <code>multi-agent-decompose</code><br>
+  Split a complex goal into subtasks for parallel agent execution: dependency ordering, a per-subtask contract (input, output, success criteria), and a result-merging protocol that never resolves conflicts by guessing.
+</div>
+<div class="skill">
+  <code>codebase-map</code><br>
+  Build a one-page map of an unfamiliar repository — entry points, module boundaries, one traced primary flow, key files — so an agent or developer can navigate it without reading everything.
+</div>
+<div class="skill">
+  <code>release-notes</code><br>
+  Generate user-facing release notes from git history between two refs: categorized changelog (Added / Fixed / Changed / Breaking) in keep-a-changelog style, with breaking changes impossible to miss.
+</div>
+
+<p class="fine">Each skill ships as a <code>SKILL.md</code> workflow file (frontmatter + step-by-step workflow + rules + runnable example + anti-patterns), matching the format of the free pack. Works with Claude Code, Codex CLI, and any agent framework that reads skill files.</p>
+
+<h2>Price</h2>
+<p class="price">$39 <span class="fine">one-time payment</span></p>
+<p>Pay with <strong>USDT</strong> (stablecoin). After you email me, you'll receive the wallet address and payment instructions. Manual process — no checkout page, no account needed.</p>
+
+<h2>How to buy</h2>
+<ol class="steps">
+  <li><strong>Email me</strong> with the subject "Skills Pro". I'll reply with the USDT wallet address, the exact amount, and your order ID.</li>
+  <li><strong>Send the USDT</strong> and reply with the transaction hash.</li>
+  <li><strong>Receive the pack</strong> — after the payment is confirmed on-chain, the ZIP is emailed to you within 24 hours.</li>
+</ol>
+<a class="btn" href="mailto:alapha888@gmail.com?subject=Skills%20Pro">Email to buy</a>
+
+<h2>The fine print</h2>
+<ul>
+  <li><strong>License:</strong> your purchase covers your own use (personal or within your team). Redistribution or resale of the files is not permitted.</li>
+  <li><strong>Delivery:</strong> ZIP archive by email within 24 hours of confirmed payment.</li>
+  <li><strong>Refund:</strong> if the pack isn't what you expected, tell me what's wrong. If we can't resolve it in one round of discussion, you get a full refund — no back-and-forth.</li>
+  <li><strong>What this is not:</strong> these are workflow guides for your AI agent, not software. They don't promise productivity numbers — they give your agent a repeatable checklist for three specific jobs.</li>
+</ul>
+
+<footer>
+  Agent Skills Pro · companion to the free MIT pack · email to buy
+</footer>
+
+</body>
+</html>
