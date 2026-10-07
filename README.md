@@ -20,7 +20,7 @@ Same as the free pack: checklists, not essays; no fabrication (missing info is m
 
 ## Price & delivery
 
-$39 one-time, paid in USDT. Manual process: email me (subject "Skills Pro"), receive the wallet address, send payment, get the ZIP by email within 24 hours of confirmed payment. One round of unresolved dispute → full refund.
+$39 one-time, paid in USDT. Manual process: use the **Email to buy** button on the [landing page](https://alapha888.github.io/agent-skills-pro/) (it opens an email with the subject "Skills Pro"), receive the wallet address, send payment, get the ZIP by email within 24 hours of confirmed payment. One round of unresolved dispute → full refund.
 
 ## License
 
