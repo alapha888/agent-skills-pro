@@ -17,6 +17,7 @@
   .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 1.6em; height: 1.6em; background: #1a1a1a; color: #fff; border-radius: 50%; text-align: center; line-height: 1.6em; font-size: 0.85em; }
   .btn { display: inline-block; background: #1a1a1a; color: #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 10px; }
   .fine { color: #666; font-size: 0.9em; }
+  .sample { background: #1a1a1a; color: #e8e8e8; border-radius: 8px; padding: 14px 18px; overflow-x: auto; font-size: 0.82em; line-height: 1.5; }
   footer { margin-top: 3em; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 1em; }
 </style>
 </head>
@@ -42,6 +43,25 @@
 </div>
 
 <p class="fine">Each skill ships as a <code>SKILL.md</code> workflow file (frontmatter + step-by-step workflow + rules + runnable example + anti-patterns), matching the format of the free pack. Works with Claude Code, Codex CLI, and any agent framework that reads skill files.</p>
+
+<h2>Sample output</h2>
+<p>Here's what the <code>codebase-map</code> skill's example output looks like (excerpt):</p>
+<pre class="sample"># Codebase map: acme-cli (Node, commander)
+
+Entry: bin/acme.js → src/index.js (commander program)
+Tests: vitest, tests/ mirrors src/
+
+src/
+  commands/   one file per CLI command; each exports {name, run}
+  lib/api.js  all HTTP calls; single axios instance, auth header injected here
+  render/     output formatting (table, json, quiet)
+
+Primary flow (acme deploy):
+  bin/acme.js → src/commands/deploy.js → lib/api.js:pushBundle()
+    → POST /v1/bundles → lib/store.js:saveDeployment()
+
+Not traced: auth refresh flow, plugin system (src/plugins/, secondary)</pre>
+<p class="fine">Each Pro skill ships with a worked example in this format, plus the rules and anti-patterns that keep the output honest.</p>
 
 <h2>Price</h2>
 <p class="price">$39 <span class="fine">one-time payment</span></p>
